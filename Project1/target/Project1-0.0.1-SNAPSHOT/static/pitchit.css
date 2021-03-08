@@ -1,0 +1,105 @@
+body {
+    font: 75% georgia, sans-serif;
+}
+
+header {
+    background-color: #ae83d0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+}
+
+h1 > a {
+    color:white;
+    text-decoration: none;
+}
+
+.form {
+    margin: auto;
+	width: 400px;
+	border-radius: 20px;
+    padding: 20px;
+    background-color: #ae83d0;
+    color: white;
+    font: georgia, sans-serif;
+    text-align: center;
+}
+
+input[type=text], select {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 40px;
+    background-color: #965EC2;
+    color: white;
+    font: georgia;
+    border-radius: 8px;
+}
+
+.button:hover {
+	background-color: #7D41AC;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: #ae83d0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pitchTable {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pitchTable td, #pitchTable th {
+    border: 1px solid;
+    padding: 8px;
+}
+
+#pitchTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ae83d0;
+    color: white;
+}

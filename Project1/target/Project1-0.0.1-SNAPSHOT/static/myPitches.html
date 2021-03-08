@@ -1,0 +1,67 @@
+<head>
+    <title>PitchIt | My Pitches</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet"  href="pitchit.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">PitchIt</a></h1>
+    </header>
+    <main>
+        <div id="mainDiv">
+
+        </div>
+        <div class="form-popup" id="infoPopup">
+            <div class="form-container" id="infoSection">
+
+            </div>
+        </div>
+        <div id="pitchSection">
+            
+        </div>
+        <div class="form-popup" id="pitchForm">
+            <form action="/action_page.php" class="form-container">
+                <h2>Create a new pitch</h2>
+
+                <label for="storyTitle">Title: </label>
+                <input type="text" placeholder="Enter a title" name="storyTitle" id="storyTitle" required><br>
+                <label for="storyType">Story Type:</label>
+                <select id="storyType" name="storyType">
+                    <option value="Novel">Novel</option>
+                    <option value="Novella">Novella</option>
+                    <option value="Short Story">Short Story</option>
+                    <option value="Article">Article</option>
+                </select><br>
+                <label for="genre">Story Genre: </label>
+                <select id="genre" name="genre">
+                    <option value="Nonfiction">Non-Fiction</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Scifi">Sci-Fi</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Historical Fiction">Historical Fiction</option>
+                    <option value="Satire">Satire</option>
+                    <option value="Academic">Academic</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Travel">Travel</option>
+                </select><br>
+                <label for="tagline">Tagline: </label>
+                <input type="text" placeholder="Enter a tagline" name="tagline" id="tagline" required><br>
+                <label for="description">Description: </label>
+                <input type="text" placeholder="Enter a story description" name="description" id="description" required><br>
+                <label for="authorInfo">Author Info: </label>
+                <input type="text" placeholder="Enter some information about the author" name="authorInfo" id="authorInfo" required><br>
+                <label for="completionDate">Completion Date: </label>
+                <input type="date" id="completionDate" name="completionDate"><br>
+                <button type="button" class="button" onclick="createPitch()">Submit</button>
+                <button type="button" class="button" onclick="closePitchCreate()">Cancel</button>
+            </form>
+        </div>
+    </main>
+    <script src="main.js"></script>
+    <script src="myPitches.js"></script>
+</body>
